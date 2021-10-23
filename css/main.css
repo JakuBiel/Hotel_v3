@@ -74,12 +74,17 @@ span {
 
 #showcase {
   background: url(/dist/img/showcase.jpg) no-repeat center center/cover;
+  max-width: 1200px;
   height: 70vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: auto; }
   #showcase .showcase-content {
-    text-align: center; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     #showcase .showcase-content p {
       padding: 2rem 0;
       font-size: 1.25rem; }
@@ -91,14 +96,33 @@ span {
 .history-content {
   display: flex;
   align-items: center;
-  height: 60vh; }
+  height: 40vh; }
   .history-content .history-img {
     background-image: url(/dist/img/photo-1.jpg);
     height: 100%;
     width: 50%; }
   .history-content .history-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 50%;
-    padding: 2rem; }
+    padding: 2rem;
+    align-items: center; }
   .history-content .history-right p {
     padding: 2rem 0; }
+
+#features {
+  display: flex;
+  align-items: center; }
+  #features div[class^="feat"] {
+    text-align: center;
+    padding: 3rem;
+    color: #333; }
+    #features div[class^="feat"]:nth-child(odd) {
+      background: #e29f68; }
+    #features div[class^="feat"]:nth-child(even) {
+      background: #f4f4f4; }
+    #features div[class^="feat"] h3 {
+      padding: 1rem; }
