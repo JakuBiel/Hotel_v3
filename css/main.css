@@ -14,7 +14,8 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  padding: 1rem 0; }
 
 span {
   color: #da843d; }
@@ -48,7 +49,6 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 1rem;
   line-height: 1rem; }
   .navbar .logo {
     font-size: 2rem;
@@ -59,7 +59,7 @@ span {
   .navbar a {
     color: #f4f4f4;
     padding: 0.75rem 1.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0 0.25rem;
     transition: all 0.5s; }
     .navbar a:hover {
@@ -79,7 +79,9 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px; }
   #showcase .showcase-content {
     display: flex;
     flex-direction: column;
@@ -100,7 +102,8 @@ span {
   .history-content .history-img {
     background-image: url(/dist/img/photo-1.jpg);
     height: 100%;
-    width: 50%; }
+    width: 50%;
+    border-radius: 10px; }
   .history-content .history-right {
     display: flex;
     flex-direction: column;
@@ -119,10 +122,15 @@ span {
   #features div[class^="feat"] {
     text-align: center;
     padding: 3rem;
-    color: #333; }
+    color: #333;
+    border-radius: 10px; }
     #features div[class^="feat"]:nth-child(odd) {
       background: #e29f68; }
     #features div[class^="feat"]:nth-child(even) {
-      background: #f4f4f4; }
+      background: #f4f4f4;
+      margin: 0 1rem; }
     #features div[class^="feat"] h3 {
       padding: 1rem; }
+
+.footer {
+  padding: 1rem; }
