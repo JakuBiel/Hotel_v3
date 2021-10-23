@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+body {
+  background: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2rem;
+  color: red; }
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center; }
+
+span {
+  color: #da843d; }
+
+.btn-light,
+.btn-dark {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.btn-light {
+  background: red;
+  color: #333; }
+
+.btn-light:hover {
+  background: #da843d;
+  color: #333; }
+
+.btn-dark {
+  background: #333;
+  color: red; }
+
+.btn-dark:hover {
+  background: #da843d;
+  color: #333; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1rem;
+  line-height: 1rem; }
+
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: bold; }
+
+.navbar .logo:hover {
+  color: #da843d;
+  background: inherit; }
+
+.navbar a {
+  color: red;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  margin: 0 0.25rem;
+  transition: all 0.5s; }
+
+.navbar a:hover {
+  background: #4d4d4d;
+  color: #da843d; }
+
+.navbar a.current {
+  background: #666666;
+  color: #da843d; }
+
+.navbar ul {
+  display: flex;
+  align-items: center; }
+
+#showcase {
+  background: url(/dist/img/showcase.jpg) no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#showcase .showcase-content {
+  text-align: center; }
+
+#showcase .showcase-content p {
+  padding: 2rem 0;
+  font-size: 1.25rem; }
+
+#showcase .showcase-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1em; }
+
+.history-content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.history-content p {
+  padding: 3rem 0; }
