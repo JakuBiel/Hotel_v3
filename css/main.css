@@ -9,7 +9,7 @@ body {
   background: #333;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.2rem;
-  color: red; }
+  color: #f4f4f4; }
 
 .container {
   max-width: 1000px;
@@ -29,7 +29,7 @@ span {
   cursor: pointer; }
 
 .btn-light {
-  background: red;
+  background: #f4f4f4;
   color: #333; }
 
 .btn-light:hover {
@@ -38,7 +38,7 @@ span {
 
 .btn-dark {
   background: #333;
-  color: red; }
+  color: #f4f4f4; }
 
 .btn-dark:hover {
   background: #da843d;
@@ -60,7 +60,7 @@ span {
   background: inherit; }
 
 .navbar a {
-  color: red;
+  color: #f4f4f4;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   margin: 0 0.25rem;
