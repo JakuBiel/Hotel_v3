@@ -192,5 +192,31 @@ span {
       border-radius: 50%;
       margin-right: 1rem; }
 
+.form-content {
+  text-align: left;
+  background: #f4f4f4;
+  color: #333;
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 10px; }
+  .form-content h1 {
+    padding: 1rem 0; }
+  .form-content p {
+    padding: 1rem 0; }
+  .form-content label,
+  .form-content input {
+    display: block;
+    padding: 0.75rem 0;
+    width: 100%;
+    border-radius: 5px; }
+    .form-content label::placeholder,
+    .form-content input::placeholder {
+      padding: 0 0.1rem; }
+  .form-content input {
+    border: 1px solid #333; }
+  .form-content #message {
+    padding: 0.5rem 0 7rem 0;
+    margin-bottom: 1rem; }
+
 .footer {
-  padding: 1rem; }
+  padding: 0.5rem 0 1.5rem 0; }
