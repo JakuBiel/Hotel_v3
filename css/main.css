@@ -1,3 +1,32 @@
+@media (max-width: 1000px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1rem; }
+    .navbar .logo {
+      margin-bottom: 2rem; }
+  #showcase {
+    padding: 1rem 0; }
+  .history-content {
+    flex-direction: column; }
+    .history-content .history-img {
+      display: none; }
+    .history-content .history-right {
+      width: 100%;
+      color: red; }
+  #features {
+    flex-direction: column; }
+    #features .feat {
+      padding: 5rem 2rem;
+      margin: 1rem auto; }
+  .about-content {
+    flex-direction: column; }
+    .about-content .about-right {
+      display: none; }
+    .about-content .about-left {
+      display: block; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +44,7 @@ body {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  padding: 1rem 0; }
+  padding: 1rem 0rem; }
 
 span {
   color: #da843d; }
@@ -75,12 +104,12 @@ span {
 #showcase {
   background: url(/dist/img/showcase.jpg) no-repeat center center/cover;
   max-width: 1200px;
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-bottom: 1rem;
+  padding: 10rem 0;
   border-radius: 10px; }
   #showcase .showcase-content {
     display: flex;
@@ -98,17 +127,13 @@ span {
 .history-content {
   display: flex;
   align-items: center;
-  height: 40vh; }
+  max-width: 1200px; }
   .history-content .history-img {
     background-image: url(/dist/img/photo-1.jpg);
-    height: 100%;
+    min-height: 300px;
     width: 50%;
     border-radius: 10px; }
   .history-content .history-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 50%;
     padding: 2rem; }
@@ -118,17 +143,16 @@ span {
 #features {
   display: flex;
   align-items: center; }
-  #features div[class^="feat"] {
-    text-align: center;
+  #features .feat {
     padding: 3rem;
     color: #333;
     border-radius: 10px; }
-    #features div[class^="feat"]:nth-child(odd) {
+    #features .feat:nth-child(odd) {
       background: #e29f68; }
-    #features div[class^="feat"]:nth-child(even) {
+    #features .feat:nth-child(even) {
       background: #f4f4f4;
       margin: 0 2rem; }
-    #features div[class^="feat"] h3 {
+    #features .feat h3 {
       padding: 1rem; }
 
 .about-content {
@@ -196,6 +220,7 @@ span {
   text-align: left;
   background: #f4f4f4;
   color: #333;
+  max-width: 1200px;
   padding: 2rem;
   margin: 1rem auto;
   border-radius: 10px; }
